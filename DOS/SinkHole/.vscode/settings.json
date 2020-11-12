@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "array": "c",
+        "string": "c",
+        "uart.h": "c"
+    }
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mspsim">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/contiki/tools/mspsim/mspsim.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

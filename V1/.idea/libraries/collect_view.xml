@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="collect-view">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/contiki/tools/collect-view/dist/collect-view.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

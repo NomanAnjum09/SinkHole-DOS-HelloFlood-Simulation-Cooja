@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<project name="SDN-WISE Controller" default="run" basedir=".">
+
+    <property name="build" location="build"/>
+    <property name="src" location="src"/>
+    <property name="main" value="controller.Loader"/>
+    <property name="lib" location="lib"/>
+    <property name="archieve" value="sdnwise-controller.jar"/>
+
+    <path id="classpath">
+        <fileset dir="../collect-view/dist" includes="**/*.jar"/>
+        <fileset dir="../collect-view/build" includes="**/*"/>
+        <fileset dir="lib" includes="**/*.jar"/>
+    </path>
+
+    <manifestclasspath property="jar.classpath" jarfile="${archieve}">
+        <classpath refid="classpath" />
+    </manifestclasspath>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build}/classes"/>
+        <javac srcdir="${src}" destdir="${build}/classes" classpathref="classpath"
+               debug="true" includeantruntime="false"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="${build}/jar"/>
+        <copy todir="${build}/jar">
+            <fileset dir="lib"/>
+            <file file="../collect-view/dist/collect-view.jar"/>
+        </copy>
+        <jar destfile="${build}/jar/sdnwise-controller.jar" basedir="${build}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="${main}"/>
+                <attribute name="Class-Path" value="${jar.classpath}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java fork="yes" dir="build/jar" jar="${build}/jar/sdnwise-controller.jar"
+        classpathref="classpath">
+            <arg line=""/>
+        </java>
+    </target>
+
+</project>

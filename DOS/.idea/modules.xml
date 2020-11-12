@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/ant-helloworld/ant-helloworld.iml" filepath="$PROJECT_DIR$/contiki/tools/ant-helloworld/ant-helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/avrora/avrora.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/avrora/avrora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/collect-view/collect-view.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/collect-view/collect-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/collect-view/collect-view1.iml" filepath="$PROJECT_DIR$/contiki/tools/collect-view/collect-view1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/cooja.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/cooja.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/examples/examples.iml" filepath="$PROJECT_DIR$/contiki/examples/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/examples/examples1.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/examples/examples1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/measurement-tool/measurement-tool.iml" filepath="$PROJECT_DIR$/contiki/measurement-tool/measurement-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/mrm/mrm.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/mrm/mrm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/mspsim/mspsim.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/mspsim/mspsim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/native_gateway/native_gateway.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/native_gateway/native_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/powertracker/powertracker.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/powertracker/powertracker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/examples/project_new_interface/project_new_interface.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/examples/project_new_interface/project_new_interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/examples/project_new_plugin/project_new_plugin.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/examples/project_new_plugin/project_new_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/examples/project_new_radiomedium/project_new_radiomedium.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/examples/project_new_radiomedium/project_new_radiomedium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/sdnwise-controller/sdnwise-controller.iml" filepath="$PROJECT_DIR$/contiki/tools/sdnwise-controller/sdnwise-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/cooja/apps/serial_socket/serial_socket.iml" filepath="$PROJECT_DIR$/contiki/tools/cooja/apps/serial_socket/serial_socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/tools.iml" filepath="$PROJECT_DIR$/contiki/tools/tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contiki/tools/z80/java/z80.iml" filepath="$PROJECT_DIR$/contiki/tools/z80/java/z80.iml" />
+    </modules>
+  </component>
+</project>

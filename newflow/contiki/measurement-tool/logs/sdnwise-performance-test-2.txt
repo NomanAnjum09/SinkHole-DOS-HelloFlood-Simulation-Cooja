@@ -1,0 +1,175 @@
+1095	ID:2	Rime started with address 2.0
+1102	ID:2	MAC 02:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 2.
+1108	ID:2	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1121	ID:2	Starting 'Main Process' 'RF Unicast Send Process' 'RF Broadcast Send Process' 'Timer Process' 'Beacon Timer Process' 'Report Timer Process' 'Data Timer Process' 'Packet Handler Process'
+1132	ID:2	Performance statistics: nb_pck_sent 0, nb_pck_recv 0,rtt 0, avr_rtt 0, sent_time 0, received_time 0, CLOCK_SECOND 128
+1207	ID:4	Rime started with address 4.0
+1214	ID:4	MAC 04:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 4.
+1220	ID:4	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1234	ID:4	Starting 'Main Process' 'RF Unicast Send Process' 'RF Broadcast Send Process' 'Timer Process' 'Beacon Timer Process' 'Report Timer Process' 'Data Timer Process' 'Packet Handler Process'
+1241	ID:1	Rime started with address 1.0
+1244	ID:4	Performance statistics: nb_pck_sent 0, nb_pck_recv 0,rtt 0, avr_rtt 0, sent_time 0, received_time 0, CLOCK_SECOND 128
+1248	ID:1	MAC 01:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 1.
+1254	ID:1	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1269	ID:1	Starting 'Main Process' 'RF Unicast Send Process' 'RF Broadcast Send Process' 'Timer Process' 'Beacon Timer Process' 'Report Timer Process' 'Adapter process' 'Data Timer Process' 'Packet Handler Process'
+1279	ID:1	Performance statistics: nb_pck_sent 0, nb_pck_recv 0,rtt 0, avr_rtt 0, sent_time 0, received_time 0, CLOCK_SECOND 128
+1282	ID:1	z&d00000001l'~
+1758	ID:3	Rime started with address 3.0
+1765	ID:3	MAC 03:00:00:00:00:00:00:00 Contiki 3.x started. Node id is set to 3.
+1771	ID:3	nullsec CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+1784	ID:3	Starting 'Main Process' 'RF Unicast Send Process' 'RF Broadcast Send Process' 'Timer Process' 'Beacon Timer Process' 'Report Timer Process' 'Data Timer Process' 'Packet Handler Process'
+1795	ID:3	Performance statistics: nb_pck_sent 0, nb_pck_recv 0,rtt 0, avr_rtt 0, sent_time 0, received_time 0, CLOCK_SECOND 128
+11283	ID:1	Sink -> Controller: 1 13 0.1 0.1 2 99 0.1 0 255 0 
+16615	ID:1	Sink -> Controller: 1 16 0.1 0.2 2 99 0.1 1 255 1 0 1 60 
+21283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+21752	ID:1	Sink -> Controller: 1 16 0.1 0.3 2 98 0.1 2 255 1 0 2 73 
+26451	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+31283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+31748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+31919	ID:1	Received from controller: 1 13 0 1 0 1 5 90 0 1 0 0 1 
+31962	ID:1	Received from controller: 1 15 0 1 0 1 5 90 0 1 0 0 1 0 2 
+32135	ID:1	Received from controller: 1 17 0 1 0 1 5 90 0 1 0 0 1 0 2 0 3 
+32276	ID:1	Received from controller: 1 19 0 1 0 1 5 90 0 1 0 0 1 0 2 0 3 0 4 
+34794	ID:1	Sink -> Controller: 1 14 0.1 0.3 3 98 0.1 0 0 1 1 
+34804	ID:1	Sink -> Controller: 1 14 0.1 0.4 3 97 0.1 0 0 1 1 
+35610	ID:1	Received from controller: 1 17 0 1 0 1 5 90 0 1 0 0 1 0 2 0 3 
+35738	ID:1	Received from controller: 1 19 0 1 0 1 5 90 0 1 0 0 1 0 2 0 3 0 4 
+36756	ID:1	Sink -> Controller: 1 34 0.1 0.3 3 98 0.1 1 0 1 1 21 0 0 0 0 8 100 0 0 0 255 2 0 2 73 0 4 65 0 0 
+36788	ID:1	Received from controller: 1 17 0 1 0 1 5 90 0 1 0 0 1 0 2 0 3 
+36887	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+38126	ID:1	Sink -> Controller: 1 34 0.1 0.4 3 97 0.1 1 0 1 1 21 0 0 0 0 8 100 0 0 0 255 1 0 3 65 0 0 0 0 0 
+38270	ID:1	Received from controller: 1 19 0 1 0 1 5 90 0 1 0 0 1 0 2 0 3 0 4 
+41283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+41747	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+42037	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+46427	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+51283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+51749	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+52039	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+56716	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+61283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+62140	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+62496	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+66451	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+71283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+71748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+71996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+76474	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+81283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+81746	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+82371	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+86616	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+91283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+92124	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+92133	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+96435	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+101283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+101748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+102161	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+106474	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+111283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+111873	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+112246	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+116616	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+121284	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+121753	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+121997	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+126451	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+131283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+131746	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+131996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+136662	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+141283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+141748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+141996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+146466	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+151284	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+151747	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+152163	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+153550	ID:2	Send Data seq_no: 1,clk 19614,t 153234
+153563	ID:1	Received Data seq_no: 1, from 0.2 
+154201	ID:4	Send Data seq_no: 1,clk 19683,t 153773
+154371	ID:1	Received Data seq_no: 1, from 0.4 
+155604	ID:3	Send Data seq_no: 1,clk 19792,t 154625
+155745	ID:1	Received Data seq_no: 1, from 0.3 
+156435	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+161283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+161746	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+161996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+166474	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+171283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+171749	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+171996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+176466	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+181284	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+181755	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+181996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+183506	ID:4	Send Data seq_no: 2,clk 23434,t 183078
+183619	ID:1	Received Data seq_no: 2, from 0.4 
+184425	ID:2	Send Data seq_no: 2,clk 23566,t 184109
+184438	ID:1	Received Data seq_no: 2, from 0.2 
+185519	ID:3	Send Data seq_no: 2,clk 23621,t 184539
+185619	ID:1	Received Data seq_no: 2, from 0.3 
+186435	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+191283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+191749	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+192161	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+196474	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+201283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+201627	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+201996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+206616	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+211284	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+211749	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+211996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+213303	ID:4	Send Data seq_no: 3,clk 27248,t 212875
+213493	ID:1	Received Data seq_no: 3, from 0.4 
+213635	ID:3	Send Data seq_no: 3,clk 27220,t 212656
+213744	ID:1	Received Data seq_no: 3, from 0.3 
+214731	ID:2	Send Data seq_no: 3,clk 27445,t 214414
+214743	ID:1	Received Data seq_no: 3, from 0.2 
+217302	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+221283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+222936	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+222945	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+226466	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+231283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+231872	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+231996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+236435	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+241144	ID:2	Send Data seq_no: 4,clk 30826,t 240828
+241156	ID:1	Received Data seq_no: 4, from 0.2 
+241284	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+241748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+241975	ID:4	Send Data seq_no: 4,clk 30918,t 241546
+241996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+242161	ID:1	Received Data seq_no: 4, from 0.4 
+244666	ID:3	Send Data seq_no: 4,clk 31192,t 243687
+244744	ID:1	Received Data seq_no: 4, from 0.3 
+246608	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+251283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+251746	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+251996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+256466	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+261283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+261748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+261996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+266677	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+271284	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+271748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+271996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+272522	ID:4	Send Data seq_no: 5,clk 34828,t 272093
+272745	ID:1	Received Data seq_no: 5, from 0.4 
+274816	ID:2	Send Data seq_no: 5,clk 35136,t 274500
+274828	ID:1	Received Data seq_no: 5, from 0.2 
+274854	ID:3	Send Data seq_no: 5,clk 35056,t 273875
+274995	ID:1	Received Data seq_no: 5, from 0.3 
+276647	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+281283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+281755	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+282162	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+286466	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 
+291283	ID:1	Sink -> Controller: 1 16 0.1 0.1 2 99 0.1 0 255 1 0 2 60 
+291748	ID:1	Sink -> Controller: 1 19 0.1 0.3 2 98 0.1 2 255 2 0 2 73 0 4 65 
+291996	ID:1	Sink -> Controller: 1 16 0.1 0.4 2 97 0.1 3 255 1 0 3 65 
+296569	ID:1	Sink -> Controller: 1 19 0.1 0.2 2 99 0.1 1 255 2 0 1 60 0 3 73 

@@ -1,0 +1,1031 @@
+^Cnoman@noman-HP-ProBook-470-G3:~/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja$ ant run
+Buildfile: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/build.xml
+
+init:
+
+compile:
+
+copy configs:
+
+jar_cooja:
+      [jar] Building jar: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/dist/cooja.jar
+
+jar:
+
+init:
+
+compile:
+
+jar:
+
+init:
+
+mspsim:
+
+init:
+
+compile:
+
+jar:
+
+coffee:
+
+init:
+
+compile:
+    [javac] Compiling 8 source files to /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/coffee-manager/build
+
+configs:
+
+jar:
+      [jar] Building jar: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/coffee-manager/coffee.jar
+     [copy] Copying 1 file to /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/mspsim/lib
+
+compile:
+
+copy:
+
+jar:
+
+init:
+
+compile:
+
+jar:
+
+init:
+
+clean:
+   [delete] Deleting directory /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/serial_socket/build
+
+compile:
+    [mkdir] Created dir: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/serial_socket/build
+    [javac] Compiling 2 source files to /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/serial_socket/build
+
+jar:
+      [jar] Building jar: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/serial_socket/lib/serial_socket.jar
+
+init:
+
+compile:
+
+jar:
+
+init:
+
+compile:
+
+jar:
+
+init:
+
+clean:
+   [delete] Deleting directory /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/powertracker/build
+
+compile:
+    [mkdir] Created dir: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/powertracker/build
+    [javac] Compiling 1 source file to /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/powertracker/build
+
+jar:
+      [jar] Building jar: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/contiki/tools/cooja/apps/powertracker/lib/powertracker.jar
+
+run:
+     [java]  WARN [main] (Cooja.java:3179) - JAVA_HOME environment variable not set, Cooja motes may not compile
+     [java]  INFO [AWT-EventQueue-1] (Cooja.java:2864) - External tools default settings: /external_tools_linux_64.config
+     [java]  INFO [AWT-EventQueue-1] (Cooja.java:2894) - External tools user settings: /home/noman/.cooja.user.properties
+     [java]  INFO [AWT-EventQueue-1] (Cooja.java:1587) - Loaded plugin class: class org.contikios.cooja.plugins.SDNWISE
+     [java]  INFO [Thread-1] (Simulation.java:427) - Simulation random seed: 123456
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/sink.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (MspMote.java:235) - Loading firmware from: /home/noman/A Drive/COOJA/../../B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-1] (Visualizer.java:256) - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+     [java]  INFO [Thread-1] (TimeLine.java:567) - Zoom level: 500.0 microseconds/pixel 
+     [java] FATAL [AWT-EventQueue-1] (Cooja.java:2191) - Exception when creating mote type
+     [java] org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+     [java] 	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+     [java] 	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2186)
+     [java] 	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2165)
+     [java] 	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2946)
+     [java] 	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+     [java] 	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+     [java] 	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+     [java] 	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+     [java] 	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+     [java] 	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+     [java] 	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+     [java] 	at java.awt.Component.processMouseEvent(Component.java:6539)
+     [java] 	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+     [java] 	at java.awt.Component.processEvent(Component.java:6304)
+     [java] 	at java.awt.Container.processEvent(Container.java:2239)
+     [java] 	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+     [java] 	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+     [java] 	at java.awt.Component.dispatchEvent(Component.java:4711)
+     [java] 	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+     [java] 	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+     [java] 	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+     [java] 	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+     [java] 	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+     [java] 	at java.awt.Component.dispatchEvent(Component.java:4711)
+     [java] 	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+     [java] 	at java.awt.EventQueue.access$500(EventQueue.java:97)
+     [java] 	at java.awt.EventQueue$3.run(EventQueue.java:709)
+     [java] 	at java.awt.EventQueue$3.run(EventQueue.java:703)
+     [java] 	at java.security.AccessController.doPrivileged(Native Method)
+     [java] 	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+     [java] 	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+     [java] 	at java.awt.EventQueue$4.run(EventQueue.java:733)
+     [java] 	at java.awt.EventQueue$4.run(EventQueue.java:731)
+     [java] 	at java.security.AccessController.doPrivileged(Native Method)
+     [java] 	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+     [java] 	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+     [java] 	at org.GNOME.Accessibility.AtkWrapper$6.dispatchEvent(AtkWrapper.java:705)
+     [java] 	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+     [java] 	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+     [java] 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+     [java] 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+     [java] 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+     [java] 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+     [java] FATAL [AWT-EventQueue-1] (Cooja.java:2191) - Exception when creating mote type
+     [java] org.contikios.cooja.MoteType$MoteTypeCreationException: No identifier
+     [java] 	at org.contikios.cooja.mspmote.SkyMoteType.configureAndInit(SkyMoteType.java:135)
+     [java] 	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2186)
+     [java] 	at org.contikios.cooja.Cooja.doCreateMoteType(Cooja.java:2165)
+     [java] 	at org.contikios.cooja.Cooja$GUIEventHandler.actionPerformed(Cooja.java:2946)
+     [java] 	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+     [java] 	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+     [java] 	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+     [java] 	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+     [java] 	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+     [java] 	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:842)
+     [java] 	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:886)
+     [java] 	at java.awt.Component.processMouseEvent(Component.java:6539)
+     [java] 	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+     [java] 	at java.awt.Component.processEvent(Component.java:6304)
+     [java] 	at java.awt.Container.processEvent(Container.java:2239)
+     [java] 	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+     [java] 	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+     [java] 	at java.awt.Component.dispatchEvent(Component.java:4711)
+     [java] 	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4904)
+     [java] 	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4535)
+     [java] 	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4476)
+     [java] 	at java.awt.Container.dispatchEventImpl(Container.java:2283)
+     [java] 	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+     [java] 	at java.awt.Component.dispatchEvent(Component.java:4711)
+     [java] 	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+     [java] 	at java.awt.EventQueue.access$500(EventQueue.java:97)
+     [java] 	at java.awt.EventQueue$3.run(EventQueue.java:709)
+     [java] 	at java.awt.EventQueue$3.run(EventQueue.java:703)
+     [java] 	at java.security.AccessController.doPrivileged(Native Method)
+     [java] 	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+     [java] 	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+     [java] 	at java.awt.EventQueue$4.run(EventQueue.java:733)
+     [java] 	at java.awt.EventQueue$4.run(EventQueue.java:731)
+     [java] 	at java.security.AccessController.doPrivileged(Native Method)
+     [java] 	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+     [java] 	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+     [java] 	at org.GNOME.Accessibility.AtkWrapper$6.dispatchEvent(AtkWrapper.java:705)
+     [java] 	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+     [java] 	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+     [java] 	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+     [java] 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+     [java] 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+     [java] 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+     [java]  INFO [AWT-EventQueue-1] (Simulation.java:427) - Simulation random seed: 123456
+     [java]  INFO [AWT-EventQueue-1] (MspMote.java:235) - Loading firmware from: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/sink.sky
+     [java]  INFO [AWT-EventQueue-1] (MspMote.java:235) - Loading firmware from: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [AWT-EventQueue-1] (MspMote.java:235) - Loading firmware from: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [AWT-EventQueue-1] (MspMote.java:235) - Loading firmware from: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [AWT-EventQueue-1] (MspMote.java:235) - Loading firmware from: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [AWT-EventQueue-1] (MspMote.java:235) - Loading firmware from: /home/noman/B Drive/University Docs/Semester 7/ISS/cooja/Assg3/node/cooja_firmwares/node.sky
+     [java]  INFO [Thread-6] (Simulation.java:255) - Simulation main loop started, system time: 1604927040350
+     [java] Controller> connected to <stdin>
+     [java] Controller> host: null
+     [java] Controller> port: -1
+     [java] Controller> command: <STDIN>
+     [java] Controller> comPort: null
+     [java] Controller> useSerialOutput: true
+     [java] Controller> logFileToLoad: null
+     [java] Controller> resetSensorLog: false
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.5 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.5
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:59)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:84)
+     [java] Controller> Neighbor Table of 0.5 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Network Threshold -> (Mote ID: 0.2, Threshold Value: 8)
+     [java] Controller> Network Threshold -> (Mote ID: 0.3, Threshold Value: 10)
+     [java] Controller> Network Threshold -> (Mote ID: 0.4, Threshold Value: 8)
+     [java] Controller> Network Threshold -> (Mote ID: 0.5, Threshold Value: 17)
+     [java] Controller> Blacklisted Mote -> (ID: 0.5, Value: 17)
+     [java] Controller> Network Threshold -> (Mote ID: 0.6, Threshold Value: 8)
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 17 Mote ID: 0.5
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.6 2 97 0.1 3 255 2 0 4 69 0 5 83 
+     [java] Controller> Neighbor Table of Mote ID: 0.6
+     [java] Controller> Neighbor Table of 0.6 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:69)
+     [java] Controller> Network Threshold -> (Mote ID: 0.2, Threshold Value: 10)
+     [java] Controller> Network Threshold -> (Mote ID: 0.3, Threshold Value: 10)
+     [java] Controller> Network Threshold -> (Mote ID: 0.4, Threshold Value: 10)
+     [java] Controller> Network Threshold -> (Mote ID: 0.6, Threshold Value: 11)
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 11 Mote ID: 0.6
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> Online Motes ID: 0.1
+     [java] Controller> Online Motes ID: 0.2
+     [java] Controller> Online Motes ID: 0.3
+     [java] Controller> Online Motes ID: 0.4
+     [java] Controller> Online Motes ID: 0.6
+     [java] Controller> Online Motes Count: 5
+     [java] Controller> Offline Motes Count: 0
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.2 2 99 0.1 1 255 3 0 1 73 0 3 80 0 4 52 
+     [java] Controller> Neighbor Table of Mote ID: 0.2
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.2 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:52)
+     [java] Controller> {0.1, 0.2, }
+     [java] Controller Serial> !/ ! !%z !  ! "
+     [java] Controller> OpenPath :{33 47 32 33 32 33 37 122 32 33 32 32 33 32 34  }
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.3 2 99 0.1 1 255 4 0 1 79 0 2 80 0 4 83 0 5 59 
+     [java] Controller> Neighbor Table of Mote ID: 0.3
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.1 Neighbor Mote's RSSI Value:79)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:80)
+     [java] Controller> Neighbor Table of 0.3 -> (Neighbor Mote: 0.4 Neighbor Mote's RSSI Value:83)
+     [java] Controller> {0.1, 0.3, }
+     [java] Controller> OpenPath :{33 47 32 33 32 33 37 122 32 33 32 32 33 32 35  }
+     [java] Controller Serial> !/ ! !%z !  ! #
+     [java] Controller> Sink -> Controller: 1 19 0.1 0.1 2 99 0.1 0 255 2 0 2 73 0 3 79 
+     [java] Controller> Neighbor Table of Mote ID: 0.1
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:73)
+     [java] Controller> Neighbor Table of 0.1 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:79)
+     [java] Controller> {0.1, }
+     [java] Controller> OpenPath :{33 45 32 33 32 33 37 122 32 33 32 32 33  }
+     [java] Controller Serial> !- ! !%z !  !
+     [java] Controller> Sink -> Controller: 1 25 0.1 0.4 2 98 0.1 2 255 4 0 2 52 0 3 83 0 5 84 0 6 69 
+     [java] Controller> Neighbor Table of Mote ID: 0.4
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.2 Neighbor Mote's RSSI Value:52)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.3 Neighbor Mote's RSSI Value:83)
+     [java] Controller> Neighbor Table of 0.4 -> (Neighbor Mote: 0.6 Neighbor Mote's RSSI Value:69)
+     [java] Controller> {0.1, 0.2, 0.4, }
+     [java] Controller> OpenPath :{33 49 32 33 32 33 37 122 32 33 32 32 33 32 34 32 36  }
+     [java] Controller Serial> !1 ! !%z !  ! " $
+     [java] Controller> Sink -> Controller: 1 22 0.1 0.5 2 98 0.1 2 255 3 0 3 59 0 4 84 0 6 83 
+     [java]  INFO [Thread-6] (Simulation.java:317) - Simulation main loop stopped, system time: 1604927663417	Duration: 623067 ms	Simulated time 3650000 ms	Ratio 5.8581179873111555
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller> Network Threshold -> (Mote ID: 0.2, Threshold Value: 2)
+     [java] Controller> Network Threshold -> (Mote ID: 0.3, Threshold Value: 2)
+     [java] Controller> Network Threshold -> (Mote ID: 0.4, Threshold Value: 2)
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Whitelisted Mote ID: 0.1
+     [java] Controller> Whitelisted Mote ID: 0.2
+     [java] Controller> Whitelisted Mote ID: 0.3
+     [java] Controller> Whitelisted Mote ID: 0.4
+     [java] Controller> Whitelisted Mote ID: 0.6
+     [java] Controller> Network Highest Threshold Value: 2 Mote ID: 0.2
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 5
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Whitelisted Mote ID: 0.1
+     [java] Controller> Whitelisted Mote ID: 0.2
+     [java] Controller> Whitelisted Mote ID: 0.3
+     [java] Controller> Whitelisted Mote ID: 0.4
+     [java] Controller> Whitelisted Mote ID: 0.6
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 5
+     [java] Controller> Online Motes ID: 0.1
+     [java] Controller> Online Motes ID: 0.2
+     [java] Controller> Online Motes ID: 0.3
+     [java] Controller> Online Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> Online Motes Count: 4
+     [java] Controller> Offline Motes Count: 2
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Whitelisted Mote ID: 0.1
+     [java] Controller> Whitelisted Mote ID: 0.2
+     [java] Controller> Whitelisted Mote ID: 0.3
+     [java] Controller> Whitelisted Mote ID: 0.4
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 4
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller Serial> MMD: 0.5 
+     [java]  INFO [Thread-7] (Simulation.java:255) - Simulation main loop started, system time: 1604927889851
+     [java]  INFO [Thread-7] (Simulation.java:317) - Simulation main loop stopped, system time: 1604927889851	Duration: 0 ms	Simulated time 3650000 ms	Ratio Infinity
+     [java]  INFO [Thread-8] (Simulation.java:255) - Simulation main loop started, system time: 1604927892577
+     [java]  INFO [Thread-8] (Simulation.java:317) - Simulation main loop stopped, system time: 1604927892577	Duration: 0 ms	Simulated time 3650000 ms	Ratio Infinity
+     [java]  INFO [Thread-9] (Simulation.java:255) - Simulation main loop started, system time: 1604927893259
+     [java]  INFO [Thread-9] (Simulation.java:317) - Simulation main loop stopped, system time: 1604927893260	Duration: 1 ms	Simulated time 3650000 ms	Ratio 3650000.0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Whitelisted Mote ID: 0.1
+     [java] Controller> Whitelisted Mote ID: 0.2
+     [java] Controller> Whitelisted Mote ID: 0.3
+     [java] Controller> Whitelisted Mote ID: 0.4
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 4
+     [java] Controller> Offline Motes ID: 0.1
+     [java] Controller> Offline Motes ID: 0.2
+     [java] Controller> Offline Motes ID: 0.3
+     [java] Controller> Offline Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> Online Motes Count: 0
+     [java] Controller> Offline Motes Count: 6
+     [java] Controller Serial> MMD: 0.5 
+     [java] Controller> Exception in thread "Timer-2" java.lang.IllegalStateException: No source specified. Call setSource() first.
+     [java] Controller> 	at org.graphstream.algorithm.Dijkstra.compute(Dijkstra.java:341)
+     [java] Controller> 	at controller.NetworkGraph.buildSPT(NetworkGraph.java:261)
+     [java] Controller> 	at controller.NetworkGraph.access$0(NetworkGraph.java:258)
+     [java] Controller> 	at controller.NetworkGraph$3.run(NetworkGraph.java:149)
+     [java] Controller> 	at java.util.TimerThread.mainLoop(Timer.java:555)
+     [java] Controller> 	at java.util.TimerThread.run(Timer.java:505)
+     [java]  INFO [Thread-10] (Simulation.java:255) - Simulation main loop started, system time: 1604927948394
+     [java]  INFO [Thread-10] (Simulation.java:317) - Simulation main loop stopped, system time: 1604927948395	Duration: 1 ms	Simulated time 3650000 ms	Ratio 3650000.0
+     [java]  INFO [Thread-11] (Simulation.java:255) - Simulation main loop started, system time: 1604927949586
+     [java]  INFO [Thread-11] (Simulation.java:317) - Simulation main loop stopped, system time: 1604927949587	Duration: 1 ms	Simulated time 3650000 ms	Ratio 3650000.0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Offline Motes ID: 0.1
+     [java] Controller> Offline Motes ID: 0.2
+     [java] Controller> Offline Motes ID: 0.3
+     [java] Controller> Offline Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> Online Motes Count: 0
+     [java] Controller> Offline Motes Count: 6
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> Offline Motes ID: 0.1
+     [java] Controller> Offline Motes ID: 0.2
+     [java] Controller> Offline Motes ID: 0.3
+     [java] Controller> Offline Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> Online Motes Count: 0
+     [java] Controller> Offline Motes Count: 6
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> Offline Motes ID: 0.1
+     [java] Controller> Offline Motes ID: 0.2
+     [java] Controller> Offline Motes ID: 0.3
+     [java] Controller> Offline Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> Online Motes Count: 0
+     [java] Controller> Offline Motes Count: 6
+     [java]  INFO [Thread-12] (Simulation.java:255) - Simulation main loop started, system time: 1604928263763
+     [java]  INFO [Thread-12] (Simulation.java:317) - Simulation main loop stopped, system time: 1604928263763	Duration: 0 ms	Simulated time 3650000 ms	Ratio Infinity
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> Offline Motes ID: 0.1
+     [java] Controller> Offline Motes ID: 0.2
+     [java] Controller> Offline Motes ID: 0.3
+     [java] Controller> Offline Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Online Motes Count: 0
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Offline Motes Count: 6
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> ************ All Blacklisted Motes ************
+     [java] Controller> Blacklisted Mote ID: 0.5
+     [java] Controller> ************ All Whitelisted Motes ************
+     [java] Controller> Network Highest Threshold Value: 0 Mote ID: 
+     [java] Controller> Blacklisted Count: 1
+     [java] Controller> Whitelisted Count: 0
+     [java] Controller> Offline Motes ID: 0.1
+     [java] Controller> Offline Motes ID: 0.2
+     [java] Controller> Offline Motes ID: 0.3
+     [java] Controller> Offline Motes ID: 0.4
+     [java] Controller> Offline Motes ID: 0.5
+     [java] Controller> Offline Motes ID: 0.6
+     [java] Controller> Online Motes Count: 0
+     [java] Controller> Offline Motes Count: 6
+

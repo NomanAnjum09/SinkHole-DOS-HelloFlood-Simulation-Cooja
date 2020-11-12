@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/contiki/tools/sdnwise-controller/lib/jcommon-1.0.13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/sdnwise-controller/lib/jfreechart-1.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

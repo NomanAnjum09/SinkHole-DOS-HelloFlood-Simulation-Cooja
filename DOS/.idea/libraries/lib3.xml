@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/contiki/tools/collect-view/lib/jfreechart-1.0.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/collect-view/lib/jcommon-1.0.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

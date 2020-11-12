@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AntConfiguration">
+    <buildFile url="file://$PROJECT_DIR$/contiki/tools/cooja/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/contiki/tools/sdnwise-controller/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/contiki/tools/collect-view/build.xml" />
+    <buildFile url="file://$PROJECT_DIR$/contiki/tools/ant-helloworld/build.xml" />
+  </component>
+</project>

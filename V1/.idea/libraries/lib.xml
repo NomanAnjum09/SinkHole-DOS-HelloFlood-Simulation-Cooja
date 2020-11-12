@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/apps/mspsim/lib/cooja_mspsim.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/apps/mspsim/lib/coffee.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/apps/mspsim/lib/mspsim.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/apps/mspsim/lib/jipv6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

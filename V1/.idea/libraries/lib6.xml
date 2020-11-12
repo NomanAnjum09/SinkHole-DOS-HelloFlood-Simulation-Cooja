@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="lib6">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/lib/swingx-all-1.6.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/lib/jsyntaxpane.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/lib/jdom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/contiki/tools/cooja/lib/log4j.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
