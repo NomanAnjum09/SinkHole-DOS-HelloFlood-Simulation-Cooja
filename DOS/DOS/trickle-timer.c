@@ -41,7 +41,7 @@ static void report_callbacks(void *ptr){
     sqn_report++;
     PRINTF("Send Report seq_no: %d", sqn_report);
     PRINTF(" at t = %" PRIu32 "(ticks)\n", (uint32_t)ptr );
-    rf_unicast_send(create_report());
+    rf_unicast_send(create_report(0));
 //TODO set default lifetime
 }
 

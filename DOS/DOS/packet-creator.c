@@ -133,7 +133,7 @@ create_data(uint8_t count)
 }
 /*----------------------------------------------------------------------------*/
 packet_t* 
-create_report(void)
+create_report(int b_count)
 {  
   packet_t* p = create_packet_empty();
   if (p != NULL){
@@ -151,10 +151,13 @@ create_report(void)
     set_payload_at(p, BEACON_BATT_INDEX, battery_sensor.value(0));
     SENSORS_DEACTIVATE(battery_sensor);
 #else
-    set_payload_at(p, BEACON_BATT_INDEX, 0xff);
+   set_payload_at(p, BEACON_BATT_INDEX, 0xff);
+
 #endif
 
-    fill_payload_with_neighbors(p);
+    int index = fill_payload_with_neighbors(p);
+    set_payload_at(p, index+1, b_count);
+
   }
   return p;
 }

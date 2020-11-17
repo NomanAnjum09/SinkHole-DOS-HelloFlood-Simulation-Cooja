@@ -6,7 +6,8 @@
 #include "packet-buffer.h"
 
 #define _NET  1
-#define _BEACON_PERIOD    10
+#define _BEACON_PERIOD    1
+#define _FLOOD_PERIOD     10
 #define _REPORT_PERIOD    15
 #define _RESET_PERIOD     100
 #define _RULE_TTL         100
@@ -21,6 +22,7 @@
     uint8_t packet_ttl;
     uint8_t rssi_min;
     uint16_t beacon_period;
+    uint16_t flood_period;
     uint16_t report_period;
     uint16_t reset_period;
     uint16_t rule_ttl; 

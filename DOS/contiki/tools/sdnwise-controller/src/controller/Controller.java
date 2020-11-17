@@ -265,100 +265,10 @@ public class Controller implements Observer, SerialConnectionListener {
         }
         
         
-        public void check_SinkHole(String inComingData) {
-        	
-        	
-     		
-        }
-        
-        
-        
-        public void check_neighbors(String[]Packet) {
-        	int neighbor_mote;
-        	for(int i = 11;i+1<Packet.length;i+=3) //display neighbor table
-    		{ 
-    			neighbor_mote = Integer.parseInt(Packet[i]);
-    			if(neighbor_mote>50)
-    				return;
-        	
-        	if(report_count.get(neighbor_mote)==null || report_count.get(neighbor_mote)==0) {
-        		malicious_motes_newflow[neighbor_mote] = true;
-				graph.blacklist_node("0."+Integer.toString(neighbor_mote));
-				mote_checked.put(neighbor_mote,malicious_neighbor_table);
-				}
-    	    }
-        }
-    	public boolean check_mote(String inComingData) {
-    	
-    		
-    		String[] Packet = inComingData.split(": ")[1].split(" ");
-        	String x = "";
-        	int current_mote =Integer.parseInt(Packet[3].split("[.]")[1]);
-        	
+    
   
-        	if(malicious_motes_wormhole[current_mote])
-        		return false;
-      
-        	
-        	if(nf_detected) {
-        		check_neighbors(Packet);
-			for(int i = 11;i<Packet.length;i++)
-				x = x+ Packet[i] + " ";
-			if(x.equals(malicious_neighbor_table)) {
-				System.out.println("Mote 0." + Integer.toString(current_mote) + " " + " blocked due to newflow");
-				malicious_motes_newflow[current_mote] = true;
-				graph.blacklist_node("0."+Integer.toString(current_mote));
-				return false;
-			}
-    	}
-        	if(malicious_motes_newflow[current_mote]) {
-        	malicious_motes_newflow[current_mote] = false;
-        	graph.go_online("0." + Integer.toString(current_mote));
-        	}
-          	
-        	return true;
-			
-		}
         
-        public void check_newflow(String inComingData) {
-        	String[] Packet = inComingData.split(": ")[1].split(" ");
-        	String x = "";
-        	int current_mote =Integer.parseInt(Packet[3].split("[.]")[1]);
-			for(int i = 11;i<Packet.length;i++)
-				x = x+ Packet[i] + " ";
-		
-			if(mote_checked.get(current_mote) == null)
-				mote_checked.put(current_mote,x);
-			else
-				return;
-			
-			if(neighbor_table_count.get(x)==null ||neighbor_table_count.get(x)==0)
-				neighbor_table_count.put(x,1);
-        	else
-        		neighbor_table_count.put(x,neighbor_table_count.get(x)+1);
-			
-			if(neighbor_table_count.get(x) >=5) {
-				System.out.println("NEW FLOW ATTACK DETECTED !!!!!! \n");
-			    malicious_motes_newflow[current_mote] = true;
-				graph.blacklist_node("0."+Integer.toString(current_mote));
-				malicious_neighbor_table = x;
-				sendToNode(("8" + " " + "1" + " " + malicious_neighbor_table).toCharArray());
-				System.out.println("Malicious neighbor table -> " + malicious_neighbor_table + "\n");
-				//check_newflow = false;
-				nf_detected  = true;
-				
-			}
-			
-		}
-       boolean check_range(double x1, double y1,double x2,double y2) {
-		
-    	   if( Math.sqrt(((x1-x2)*(x1-x2)) + ((y1-y2)*(y1-y2)))  >Transmission_range) 
-    		   return true;
-    	   else
-    		   return false;
-    	   
-       }
-       
+        
        public int get_mote_from_packet(String data) {
 		
     		String[] Packet = inComingData.split(": ")[1].split(" ");
@@ -367,62 +277,9 @@ public class Controller implements Observer, SerialConnectionListener {
         	
         }
         
-        public void check_wormhole(String data) {
 
-        	String[] Packet = inComingData.split(": ")[1].split(" ");
-           int current_mote =Integer.parseInt(Packet[3].split("[.]")[1]);
-           int neighbor_mote;
-    		
-    		
-    		for(int i = 11;i+1<Packet.length;i+=3) //display neighbor table
-    		{ 
-    			neighbor_mote = Integer.parseInt(Packet[i]);
-    			if((malicious_motes_wormhole[neighbor_mote]&&malicious_motes_wormhole[current_mote]) || coordinates[current_mote][0] == 0.0 ||coordinates[neighbor_mote][0] == 0.0 )
-    				continue;
-  
-    				//System.out.println("Checking motes:" +"0."+Integer.toString(current_mote) + "and " +"0."+Integer.toString(neighbor_mote) );
-    			if(check_range(coordinates[current_mote][0],coordinates[current_mote][1],coordinates[neighbor_mote][0],coordinates[neighbor_mote][1])) {
-    				System.out.println("WORMHOLE ATTACK DETECTED !!!!!! \n");
-    				System.out.println("Malicious motes are:" +"0."+Integer.toString(current_mote) + "and " +"0."+Integer.toString(neighbor_mote) + "\n" );
-    				graph.blacklist_node("0."+Packet[3].split("[.]")[1]);
-    				graph.blacklist_node("0."+Packet[i]);
-    				malicious_motes_wormhole[neighbor_mote] = true;
-    				malicious_motes_wormhole[current_mote] = true;
-    			}
-    	    }
-        	
-        }
         
-        public void get_coordinates() {
-  
-        	int mote_id;
-        	 try
-             { System.out.println("In function get_coordinates");
-             File file = new File("/home/biohazard/sdn-wise-trickle/contiki/tools/sdnwise-controller/src/coordinates.txt"); 
-             	RandomAccessFile raf = new RandomAccessFile(file, "rw"); 
-             	 String[] data = raf.readLine().split(" "); 
-             	 for(int i=0;i<data.length;i++) {
-             		 mote_id = Integer.parseInt(data[i]);
-             		
-             		coordinates[mote_id][0] = Double.parseDouble(data[i+1]);
-             		coordinates[mote_id][1] = Double.parseDouble(data[i+2]);
-             		 i+=2;
-             	}
-             	 for(int i = 1 ;i<33;i++) {
-             		 if(coordinates[i][0] == 0.0)
-             			 continue;
-             		 System.out.println("Mote " + Integer.toString(i)+ ": "+ "X =" + Double.toString(coordinates[i][0]) + "," + "Y =" + Double.toString(coordinates[i][1]));
-             		 
-             	 }
-                  
-                raf.close();
-             } 
-             catch (IOException fe) 
-             { 
-                 System.out.println("File not found"); 
-             } 
-       
-        }
+
         @Override
         public void run() {
 // 00:54.813	ID:1	Sink -> Controller: 1 22 0.1 0.2 2 100 0.1 1 58 3 0 1 79 0 3 70 0 8 78
@@ -437,25 +294,17 @@ public class Controller implements Observer, SerialConnectionListener {
                 
               while (inComingData != null) {
                     Thread.sleep(100);
-                    if(!got_coordinates) {get_coordinates();got_coordinates = true;}
-                    textPane.setText(inComingData);
+                  
                     if (!inComingData.equals(previousData)){
                         //System.out.println(inComingData);
                     }
-                    if (inComingData.contains("Sink") && (!inComingData.equals(preData)) && check_mote(inComingData) ) {
+                    if (inComingData.contains("Sink") && (!inComingData.equals(preData))  ) {
                     	
                         String type = inComingData.split(": ")[1].split(" ")[4];
-                        if(!type.equals("9"))
-                    	System.out.println(inComingData);
                         
                         if(type.equals("2")) {
                         	
-                        	
-                        	//check_SinkHole(inComingData);
-                        	//if(check_wormholes)
-                        	//check_wormhole(inComingData);
-                        	//if(check_newflow)
-                            //check_newflow(inComingData);
+    
                         	
                         	int x = get_mote_from_packet(inComingData);
                         	if(report_count.get(x)==null ||report_count.get(x)==0)

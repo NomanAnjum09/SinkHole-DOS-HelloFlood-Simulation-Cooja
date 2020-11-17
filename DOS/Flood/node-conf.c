@@ -67,6 +67,7 @@ int blacklistCount;
     conf.requests_count = 0;
     conf.my_net = _NET;
     conf.beacon_period = _BEACON_PERIOD;
+    conf.flood_period = _FLOOD_PERIOD;
     conf.report_period = _REPORT_PERIOD;
     conf.rule_ttl = _RULE_TTL;
     conf.rssi_min = _RSSI_MIN;
@@ -95,10 +96,10 @@ int blacklistCount;
     PRINTF("[CFG]: NODE: ");
     print_address(&(conf.my_address));
     PRINTF("\n");
-    PRINTF("[CFG]: - Network ID: %d\n[CFG]: - Beacon Period: %d\n[CFG]: - "
+    PRINTF("[CFG]: - Network ID: %d\n[CFG]: - Beacon Period: %d\n[CFG]: - Flood Period : %d\n[CFG]: -"
       "Report Period: %d\n[CFG]: - Rules TTL: %d\n[CFG]: - Min RSSI: "
       "%d\n[CFG]: - Packet TTL: %d\n[CFG]: - Next Hop -> Sink: ",
-      conf.my_net, conf.beacon_period, conf.report_period,//prining node_conf  info for our packet
+      conf.my_net, conf.beacon_period, conf.flood_period ,conf.report_period,//prining node_conf  info for our packet
       conf.rule_ttl, conf.rssi_min, conf.packet_ttl);
     print_address(&(conf.nxh_vs_sink));
     PRINTF(" (hops: %d, distance: %d)\n", conf.hops_from_sink, conf.distance_from_sink);

@@ -26,7 +26,8 @@
     OPEN_PATH,
     CONFIG,
     REG_PROXY,
-    MMD
+    MMD,
+    FLOOD
   } packet_type_t;
 
   typedef struct __attribute__((__packed__)) packet_info {

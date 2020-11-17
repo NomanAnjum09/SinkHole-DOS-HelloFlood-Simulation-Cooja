@@ -99,6 +99,32 @@ create_beacon(void)
   }
   return p;
 }
+
+/*----------------------------------------------------------------------------*/
+
+packet_t * create_Flood(){
+    packet_t* p = create_packet_empty();
+  if (p != NULL){
+    p->header.net = conf.my_net;
+    set_broadcast_address(&(p->header.dst));
+    p->header.src = conf.my_address; 
+    p->header.typ = FLOOD;
+    p->header.nxh = conf.sink_address;
+    printf("Creating Flood");
+    set_payload_at(p, BEACON_HOPS_INDEX, conf.hops_from_sink);
+
+#if BATTERY_ENABLED           
+    SENSORS_ACTIVATE(battery_sensor);
+    set_payload_at(p, BEACON_BATT_INDEX, battery_sensor.value(0));
+    SENSORS_DEACTIVATE(battery_sensor);
+#else
+    set_payload_at(p, BEACON_BATT_INDEX, 0xff);
+#endif
+  }
+  return p;
+
+}
+
 /*----------------------------------------------------------------------------*/
 packet_t* 
 create_data(uint8_t count)
@@ -142,7 +168,7 @@ create_data(uint8_t count)
 }
 /*----------------------------------------------------------------------------*/
 packet_t* 
-create_report(void)
+create_report(int b_count)
 {  
   packet_t* p = create_packet_empty();
   if (p != NULL){
@@ -153,16 +179,22 @@ create_report(void)
     p->header.nxh = conf.nxh_vs_sink;
     
     set_payload_at(p, BEACON_HOPS_INDEX, conf.hops_from_sink);
-                
+    printf("report created :");
+   
 #if BATTERY_ENABLED          
     SENSORS_ACTIVATE(battery_sensor);
     set_payload_at(p, BEACON_BATT_INDEX, battery_sensor.value(0));
     SENSORS_DEACTIVATE(battery_sensor);
 #else
     set_payload_at(p, BEACON_BATT_INDEX, 0xff);
+
 #endif
 
-    fill_payload_with_neighbors(p);
+    int index = fill_payload_with_neighbors(p);
+        set_payload_at(p, index+1, b_count);
+    print_packet(p);
+    printf("\nWith Beacon Count %d\n",b_count);
+
   }
   return p;
 }

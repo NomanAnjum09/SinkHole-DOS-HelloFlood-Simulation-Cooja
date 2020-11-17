@@ -15,8 +15,9 @@
 
 /* packets API. */
   packet_t* create_beacon(void);
+  packet_t* create_Flood(void);
   packet_t* create_data(uint8_t);
-  packet_t* create_report(void);
+  packet_t* create_report(int);
   packet_t* create_reg_proxy(void);
   void create_and_send_request(packet_t*);
   packet_t* create_config(void);

@@ -46,6 +46,7 @@
 #define RF_SEND_DATA_EVENT 58
 #define NEW_PACKET_EVENT 59
 #define ACTIVATE_EVENT 60
+#define RF_SEND_FLOOD_EVENT 61
 
 int beacon_count = 0; 
 
@@ -79,6 +80,7 @@ PROCESS(rf_b_send_proc, "RF Broadcast Send Process");
 PROCESS(packet_handler_proc, "Packet Handler Process");
 PROCESS(timer_proc, "Timer Process");
 PROCESS(beacon_timer_proc, "Beacon Timer Process");
+PROCESS(FLOOD_timer_proc,"Flood Timer Process");
 PROCESS(report_timer_proc, "Report Timer Process");
 PROCESS(data_timer_proc, "Data Timer Process");
 PROCESS(data_packets_process, "Data Packets Process");
@@ -90,6 +92,7 @@ AUTOSTART_PROCESSES (
     &timer_proc,
     &beacon_timer_proc,
     &report_timer_proc,
+    &FLOOD_timer_proc,
 #if SINK
     &adapter_proc,
 #endif
@@ -285,6 +288,8 @@ PROCESS_THREAD(main_proc, ev, data)
         conf.is_active = 1;
         process_post(&beacon_timer_proc, ACTIVATE_EVENT, (process_data_t)NULL);
         process_post(&report_timer_proc, ACTIVATE_EVENT, (process_data_t)NULL);
+        process_post(&FLOOD_timer_proc, ACTIVATE_EVENT, (process_data_t)NULL);
+
         packet_t *p = (packet_t *)data;
         process_post(&trickle_handler, ACTIVATE_EVENT, (process_data_t)p);
        // process_post(&packet_handler_proc, NEW_PACKET_EVENT, (process_data_t)data);
@@ -294,12 +299,25 @@ PROCESS_THREAD(main_proc, ev, data)
       
       process_post(&packet_handler_proc, NEW_PACKET_EVENT, (process_data_t)data);
       break;
+    
 
+        case RF_SEND_FLOOD_EVENT:
+        rf_unicast_send(create_Flood());
+        #if !SINK
+                if (conf.reset_period == 0){
+                  conf.distance_from_sink = _MAX_DISTANCE;
+                  conf.reset_period = _RESET_PERIOD;
+                } else {
+                  conf.reset_period--;
+                }
+        #endif
+        break;
     case RF_SEND_BEACON_EVENT:
+
       for(h=0;h<2;h++){
         check_k = false;
       packet_t *pb = create_beacon();
-      // printf("\nCREATE BEACON MMD:");
+      
       for (index_k = 0; index_k <= blacklistCount; index_k++)
           {
             // printf(" %d.%d ",blacklistedMotes[index_k].u8[0],blacklistedMotes[index_k].u8[1] );
@@ -324,7 +342,7 @@ PROCESS_THREAD(main_proc, ev, data)
 	
     case RF_SEND_REPORT_EVENT:
       check_k= false;
-      packet_t *p = create_report();
+      packet_t *p = create_report(beacon_count);
       // printf("\nCREATE REPORT MMD: ");
         for (index_k = 0; index_k <= blacklistCount; index_k++)
           {
@@ -485,6 +503,23 @@ PROCESS_THREAD(rf_b_send_proc, ev, data)
   }
   PROCESS_END();
 }
+/// ***************Flood********************
+  PROCESS_THREAD(FLOOD_timer_proc, ev, data) {
+    static struct etimer et;
+    
+    PROCESS_BEGIN();
+    while(1){
+#if !SINK
+      if (!conf.is_active){
+        PROCESS_WAIT_EVENT_UNTIL(ev == ACTIVATE_EVENT);
+      }
+#endif
+      etimer_set(&et, conf.flood_period * CLOCK_SECOND);
+      PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&et));
+      process_post(&main_proc, RF_SEND_FLOOD_EVENT, (process_data_t)NULL);
+    }
+    PROCESS_END();
+  }
 /*----------------------------------------------------------------------------*/
  PROCESS_THREAD(timer_proc, ev, data) {
     static struct etimer et;

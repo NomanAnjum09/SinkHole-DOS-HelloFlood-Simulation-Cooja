@@ -1,0 +1,3 @@
+graph.blacklist_node(int)
+graph.go_online("0." + Integer.toString(current_mote));
+

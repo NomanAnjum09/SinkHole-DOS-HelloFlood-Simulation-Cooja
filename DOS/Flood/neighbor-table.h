@@ -44,7 +44,7 @@
   /* Header API. */
   void add_neighbor(address_t*, uint8_t rssi);
   void purge_neighbor_table(void);
-  void fill_payload_with_neighbors(packet_t*);
+  int fill_payload_with_neighbors(packet_t*);
   void neighbor_table_init(void);
   void print_neighbor_table(void);
   void test_neighbor_table(void);

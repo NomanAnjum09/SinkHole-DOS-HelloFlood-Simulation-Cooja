@@ -166,7 +166,7 @@
     }  
   }
 /*----------------------------------------------------------------------------*/
-  void
+  int
   fill_payload_with_neighbors(packet_t* p)
   {
     uint8_t i = REPORT_INIT_INDEX;
@@ -183,6 +183,7 @@
       set_payload_at(p,i,n->rssi);
       ++i;
     }
+    return i;
       //TODO BUG
    // purge_neighbor_table();
   }

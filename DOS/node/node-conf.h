@@ -7,7 +7,7 @@
 
 #define _NET  1
 #define _BEACON_PERIOD    10
-#define _REPORT_PERIOD    15
+#define _REPORT_PERIOD    20
 #define _RESET_PERIOD     100
 #define _RULE_TTL         100
 #define _RSSI_MIN         0

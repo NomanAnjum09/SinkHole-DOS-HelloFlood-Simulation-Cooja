@@ -36,17 +36,18 @@ public class NetworkGraph {
 	int whitelistedcount = 0;
 	int releaseOpenPath = 0;
 	int highestThresholdValue = 0;
-	int fhighestThresholdValue = 0;
+	Long fhighestThresholdValue = (long) 0;
 	String highestThresholdMoteId = "";
 	String fhighestThresholdMoteId = "";
 	int transferControlToCurTable = 0;
 	
-	
+	Vector<String> blackstring = new Vector<String>();
 	Vector<String> blacklist = new Vector<String>();
 	ConcurrentHashMap<String, String> refTable = new ConcurrentHashMap<String, String>();
 	ConcurrentHashMap<String, String> curTable = new ConcurrentHashMap<String, String>();
 	ConcurrentHashMap<String, Integer> threshold = new ConcurrentHashMap<String, Integer>();
-	ConcurrentHashMap<String, Integer> fthreshold = new ConcurrentHashMap<String, Integer>();
+	ConcurrentHashMap<String, Long> fthreshold = new ConcurrentHashMap<String, Long>();
+	ConcurrentHashMap<String, Long> oldthreshold = new ConcurrentHashMap<String, Long>();
 	ConcurrentHashMap<String, String> neighborTable = new ConcurrentHashMap<String, String>();
 	Vector<String> sendOpenPathTable = new Vector<String>();
 
@@ -77,7 +78,7 @@ public class NetworkGraph {
 				refTable.forEach((key, val) -> {
 					if (!curTable.containsKey(key)) {
 						if (graph.getNode(key) != null) {
-							//graph.removeNode(key);
+							graph.removeNode(key);
 						}
 						refTable.put(key, "offline");
 						System.out.println("Offline Motes ID: " + key);
@@ -95,11 +96,20 @@ public class NetworkGraph {
 			@Override
 			public void run() {
 				releaseOpenPath += 1;
+				
+				
+				
+				blackListSinkNodes();	
+				checkFlood();
+				setOneMinuteBeaconCount();
+				
+				
 				threshold.forEach((key, val) -> {
 					if (val > highestThresholdValue) {
 						highestThresholdValue = val;
 						highestThresholdMoteId = key;
 					}
+	///         DOS Detection Algorithm
 					System.out.println("Network Threshold -> (Mote ID: " + key + ", Threshold Value: " + val + ")");
 					if (val > 15) {
 						if (!blacklist.contains(key)) {
@@ -109,22 +119,9 @@ public class NetworkGraph {
 						}
 					}
 				});
-				fthreshold.forEach((key, val) -> {
-					if (val > fhighestThresholdValue) {
-						fhighestThresholdValue = val;
-						fhighestThresholdMoteId = key;
-					}
-					System.out.println("Flood Threshold -> (Mote ID: " + key + ", Threshold Value: " + val + ")");
-					if (val > 15) {
-						if (!blacklist.contains(key)) {
-							blacklist.add(key);
-							System.out.println("FLOOD Attack Detected");
-							System.out.println("Blacklisted Mote -> (ID: " + key + ", Value: " + val + ")");
-						}
-					}
-				});
+				
+				
 				threshold.clear();
-				fthreshold.clear();				
 				whitelistedcount = 0;
 				blacklistedcount = 0;
 				
@@ -145,9 +142,18 @@ public class NetworkGraph {
 				System.out.println("Flood Highest Threshold Value: " + fhighestThresholdValue + " Mote ID: " + fhighestThresholdMoteId);
 				System.out.println("Blacklisted Count: " + blacklistedcount);
 				System.out.println("Whitelisted Count: " + whitelistedcount);
+				System.out.println("Removing Malicious Nodes From System");
+				Iterator value1 = blacklist.iterator();
+				while(value1.hasNext()) {
+					String SENDER =(String) value1.next(); 
+					graph.removeNode(SENDER);
+					curTable.remove(SENDER);
+					refTable.remove(SENDER);	
+					sendOpenPathTable.remove(SENDER);
+				}
 				highestThresholdValue = 0;
 				highestThresholdMoteId = "";
-				fhighestThresholdValue = 0;
+				fhighestThresholdValue = (long) 0;
 				fhighestThresholdMoteId = "";
 				
 			}
@@ -197,33 +203,37 @@ public class NetworkGraph {
 			}
 			return;
 		}
-		for(int i = 11;i+1<packet.length;i+=3) //display neighbor table
- 		{ 
- 			int rssi = Integer.parseInt(packet[i+1]);
- 			String negh = packet[i];
- 			if(blacklist.contains(negh) || rssi != 0)
- 				continue;
- 			 blacklist.add(SENDER);
- 			graph.removeNode(SENDER);
-			curTable.remove(SENDER);
-			refTable.remove(SENDER);	
-			sendOpenPathTable.remove(SENDER);
-
- 			
- 			}
+		// ***************************
+		//   If Report Packet Check Sinkhole Attack
+		if(packet[4].equals("2")) {
+			System.out.println(inComingData);
+			System.out.println("Checking Report PAcket For sink");
+			check_sinkHole(packet);
+			setBeaconCount(packet);
+		}
+	//if(packet[4].equals("9")) {
+			System.out.println("Packet Of Type: "+ (String) packet[4] + "arrived");
+		//	check_Flood(packet);
+			
+		//}
+		///**************************
 		curTable.put("0.1", "online");
 		curTable.put(SENDER, "online");
+		check_DOS(packet);
+
 		
-		if(!SENDER.contentEquals("0.1")) {
-			int thresholdvalue = threshold.getOrDefault(SENDER, 1) + 1;
+		
+		///   Checking Beacon Threshold For Flood Attacks
+		/*if(!SENDER.contentEquals("0.1")) {
+			int fthresholdvalue = fthreshold.getOrDefault(SENDER, 1) + 1;
 			if(getThresh(packet[1]) > 0) {
-				threshold.put(SENDER, (getCurrentThreshold() + thresholdvalue) );
+				fthreshold.put(SENDER, (getCurrentThreshold() + fthresholdvalue) );
 				return;
 			}
-			threshold.put(SENDER, thresholdvalue);
+			fthreshold.put(SENDER, fthresholdvalue);
 		}
+		*/
 		
-		 if(!packet[4].equals("8"))
 		for (int i = 1; i <= Integer.parseInt(packet[9]); i++) {
 			NEIGHBORS.add(packet[9 + 3 * i - 2] + "." + packet[9 + 3 * i - 1] + "\t" + packet[9 + 3 * i]);
 		}
@@ -278,7 +288,7 @@ public class NetworkGraph {
 			sendOpenPathTable.add(SENDER);
 		}
 
-		if (deletemote == 1) {
+		/*if (deletemote == 1) {
 			if (graph.getNode(SENDER) != null) {
 				//graph.removeNode(SENDER);
 			}
@@ -291,10 +301,103 @@ public class NetworkGraph {
 			if(curTable.containsKey(SENDER)) {
 				curTable.remove(SENDER);
 			}	
-		}
+		}*/
 	}
 
-	private synchronized void buildSPT() {
+/// ************************ Sink Hole Detection ******
+	
+	
+	public void check_sinkHole(String[] packet) {
+		String SINK = packet[2];
+		String SENDER = packet[3];
+		String HOPS = packet[7];
+
+		for(int i = 11;i+1<packet.length;i+=3) //display neighbor table
+ 		{ 
+ 			int rssi = Integer.parseInt(packet[i+1]);
+ 			String negh = packet[i];
+ 			System.out.println("Neighbor "+negh+" Of "+SENDER+" has RSSI:->"+rssi );
+ 			if(blacklist.contains(negh) || rssi != 0)
+ 				continue;
+ 			
+ 			if(!blackstring.contains(SENDER)) {
+ 				blackstring.add(SENDER);
+ 			}
+ 		
+			return;
+ 			}
+		
+	}
+	
+	public void check_DOS(String[] packet) {
+		String SENDER = packet[3];
+		if(!SENDER.contentEquals("0.1")) {
+			int thresholdvalue = threshold.getOrDefault(SENDER, 1) + 1;
+			if(getThresh(packet[1]) > 0) {
+				System.out.println("Restricte Area");
+				threshold.put(SENDER, (getCurrentThreshold() + thresholdvalue) );
+				return;
+			}
+			threshold.put(SENDER, thresholdvalue);
+		}
+	}
+	
+	
+	public void setBeaconCount(String[] packet) {
+		String SENDER = packet[3];
+		String Beacons = packet[packet.length-1];
+		System.out.println("Checking Flood For : "+SENDER);
+		System.out.println("Beacon Sent Yet :" + Beacons);
+		
+		if(!SENDER.contentEquals("0.1")) {
+			
+			fthreshold.put(SENDER, Long.parseLong(Beacons));
+		}
+	}
+	
+	public void setOneMinuteBeaconCount() {
+		for (ConcurrentHashMap.Entry<String, Long> entry : fthreshold.entrySet()) 
+		{ String key = entry.getKey().toString();
+		Long value = entry.getValue();
+		System.out.println("key: " + key + " value: " + value);
+		oldthreshold.put(key, value);
+
+		}
+	}
+	
+	public void checkFlood() {
+		for (ConcurrentHashMap.Entry<String, Long> entry : fthreshold.entrySet()) 
+		{ String key = entry.getKey().toString();
+		Long value = entry.getValue();
+		Long old = oldthreshold.getOrDefault(key,(long) 0);
+		Long diff = value - old;
+		if(diff>20) {
+			System.out.println(key + " Sent "+ Long.toString(diff) + " Beacon Messages In One Minute");
+			if(!blacklist.contains(key)) {
+				System.out.println("Flood Attack Detected By Node : "+key);
+				blacklist.add(key);
+			}
+		}
+
+		}
+		
+	}
+	public void blackListSinkNodes() {
+		//Adding Black Nodes Detectd By SinkHole To BLack List
+		
+		Iterator<String> value = blackstring.iterator();
+		while(value.hasNext()) {
+			String blackNode = (String)value.next();
+			System.out.println("SinkHole Attack Detected by Node " + blackNode);
+			if(!blacklist.contains(blackNode))
+			blacklist.add(blackNode);
+		}
+		
+		//**************************************
+		
+	}
+	
+	private synchronized void buildSPT() { 
 		dijkstra.init(graph);
 		dijkstra.setSource(graph.getNode("0.1"));
 		dijkstra.compute();
@@ -478,7 +581,7 @@ public class NetworkGraph {
 		 
 		  
 	  }
-		 if (graph.getNode(mote) != null) {
+		 if (graph.getNode(mote) != null) { 
 	    		graph.removeNode(mote);
 		 }
 		 

@@ -295,7 +295,6 @@ PROCESS_THREAD(main_proc, ev, data)
       break;
 
     case RF_SEND_BEACON_EVENT:
-    for(h= 0;h<50;h++){
     check_k= false;
       packet_t *pb = create_beacon();
       // printf("\nCREATE BEACON MMD:");
@@ -318,11 +317,11 @@ PROCESS_THREAD(main_proc, ev, data)
         packet_deallocate(pb);
         break;
       }
-    }
+    
     break;
     case RF_SEND_REPORT_EVENT:
       check_k= false;
-      packet_t *p = create_report();
+      packet_t *p = create_report(beacon_count);
       // printf("\nCREATE REPORT MMD: ");
         for (index_k = 0; index_k <= blacklistCount; index_k++)
           {

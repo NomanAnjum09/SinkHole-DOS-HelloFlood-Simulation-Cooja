@@ -60,6 +60,7 @@ typedef enum conf_id{
   PACKET_TTL,
   RSSI_MIN,
   BEACON_PERIOD,
+  FLOOD_PERIOD,
   REPORT_PERIOD,
   RESET_PERIOD,
   RULE_TTL,
@@ -81,7 +82,8 @@ const uint8_t conf_size[RULE_TTL+1] =
   sizeof(conf.my_address),          
   sizeof(conf.packet_ttl),
   sizeof(conf.rssi_min),
-  sizeof(conf.beacon_period),       
+  sizeof(conf.beacon_period),  
+  sizeof(conf.flood_period),     
   sizeof(conf.report_period),
   sizeof(conf.reset_period),       
   sizeof(conf.rule_ttl)
@@ -94,7 +96,8 @@ const void* conf_ptr[RULE_TTL+1] =
   &conf.my_address,          
   &conf.packet_ttl,
   &conf.rssi_min,
-  &conf.beacon_period,       
+  &conf.beacon_period,    
+  &conf.flood_period,   
   &conf.report_period,
   &conf.reset_period,      
   &conf.rule_ttl,              
@@ -118,6 +121,7 @@ const void* conf_ptr[RULE_TTL+1] =
 
 /*----------------------------------------------------------------------------*/
   static void handle_beacon(packet_t*);
+  static void handle_flood(packet_t*);
   static void handle_data(packet_t*);
   static void handle_report(packet_t*);
   static void handle_response(packet_t*);
@@ -192,6 +196,11 @@ const void* conf_ptr[RULE_TTL+1] =
             handle_data(p);
             break;
 
+            case FLOOD:
+            PRINTF("[PHD]: Flood\n");
+            handle_flood(p);
+            break;
+
             case RESPONSE:
             PRINTF("[PHD]: Response\n");
             handle_response(p);
@@ -257,10 +266,19 @@ const void* conf_ptr[RULE_TTL+1] =
 #endif
     packet_deallocate(p);
   }
+//********************************************
 
-/*----------------------------------------------------------------------------*/
 
+void handle_flood(packet_t * p){
+  #if SINK
+  to_controller(p);
+  packet_deallocate(p);
+  #else
 
+  p->header.nxh = conf.nxh_vs_sink;
+  rf_unicast_send(p);
+  #endif
+}
 
 /*----------------------------------------------------------------------------*/
   void
@@ -544,6 +562,7 @@ const void* conf_ptr[RULE_TTL+1] =
           case PACKET_TTL:
           case RSSI_MIN:
           case BEACON_PERIOD:
+          case FLOOD_PERIOD:
           case REPORT_PERIOD: //defining case
           case RULE_TTL:
           // TODO check payload size
@@ -589,6 +608,7 @@ const void* conf_ptr[RULE_TTL+1] =
           case PACKET_TTL:
           case RSSI_MIN:
           case BEACON_PERIOD:
+          case FLOOD_PERIOD:
           case REPORT_PERIOD:  //defining case
           case RESET_PERIOD:
           case RULE_TTL:
